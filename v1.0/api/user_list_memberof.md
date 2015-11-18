@@ -3,12 +3,11 @@
 Get groups and directory roles that the user is a direct member of. 
 ### Prerequisites
 One of the following **scopes** is required to execute this API: 
-*User.Read; User.ReadWrite; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+*User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id>/memberOf
-GET /users/<userPrincipalName>/memberOf
+GET /users/<id | userPrincipalName>/memberOf
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.

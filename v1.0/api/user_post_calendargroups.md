@@ -7,8 +7,7 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id>/calendarGroups
-POST /users/<userPrincipalName>/calendarGroups
+POST /users/<id | userPrincipalName>/calendarGroups
 ```
 ### Request headers
 | Header       | Value |
@@ -18,7 +17,6 @@ POST /users/<userPrincipalName>/calendarGroups
 
 ### Request body
 In the request body, supply a JSON representation of [CalendarGroup](../resources/calendargroup.md) object.
-
 
 ### Response
 If successful, this method returns `201, Created` response code and [CalendarGroup](../resources/calendargroup.md) object in the response body.
